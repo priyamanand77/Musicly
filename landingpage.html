@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Musicly Songs</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+
+
+  <!-- Favicon and touch icons -->
+  <link rel="shortcut icon" href="assets/ico/logoicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />
+  >
+
+  <script>
+    function doSomething() {
+      var tab = document.getElementById("songtable");
+      console.log(tab);
+      for (let i = 0; i < 10; i++) {
+        document.write(
+          '<tr><td><div class="songItem"> <img alt="' +
+          i +
+          '"> <span class="songName">Let me Love You</span> <span class="songlistplay"><span class="timestamp">05:34 </span><i id="' +
+          i +
+          '" class="far songItemPlay fa-play-circle" style="padding: 15px;"></i> </span> </div></td></tr>'
+        );
+      }
+    }
+  </script>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    chat-icon="https:&#x2F;&#x2F;www.chatbot.com&#x2F;icon-optimize-support.37467eaf45f2004f6ccf35214c2e92d417dcf4b0b6df539b82bb2ed4b0b17cc2.png"
+    intent="WELCOME" chat-title="MusicLy" agent-id="80b3b8a4-9221-4dc8-8f2a-4196cd87654c" language-code="en">
+  </df-messenger>
+
+
+</head>
+
+<video autoplay muted loop id="myVideo">
+  <source src="video/snow.mp4" type="video/mp4">
+</video>
+
+<body>
+  <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand wow fadeInDownBig" href="landingpage.html"><img class="office-logo"
+            src="assets/img/slider/logo.png" alt="Office" /></a>
+      </div>
+
+      <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active">
+            <a href="landingpage.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="team.html">Our Team</a>
+          </li>
+          <li>
+            <a href="contact.html"><span>Contact</span></a>
+          </li>
+
+          <li>
+            <a href="index.html">Sign Out</a>
+          </li>
+          <li class="active">
+            <a href="#"><span>welcome Priyam</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="demo" style="color: black"></div>
+
+  <div class="container1">
+    <div class="songList">
+      <!-- <h1>Best of NCS - No Copyright Sounds</h1> -->
+      <div class="songItemContainer">
+        <table id="songtable">
+          <input id="myinput" type="text" class="search-bar" placeholder="search any song" name="searchbox"
+            onkeyup="searchfilter()" />
+
+          <tbody>
+            <script type="text/javascript" language="JavaScript">
+              doSomething();
+            </script>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="songBanner"></div>
+  </div>
+
+  <div class="bottom">
+    <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100" />
+    <div class="icons">
+      <!-- fontawesome icons -->
+      <i class="fas fa-3x fa-step-backward" id="previous"></i>
+      <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+      <i class="fas fa-3x fa-step-forward" id="next"></i>
+    </div>
+    <div class="songInfo">
+      <img src="playing.gif" width="42px" alt="" id="gif" />
+      <span id="masterSongName">Uski Adaon Ne Deewana Mujhe Kar Diya Song</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+</html>
