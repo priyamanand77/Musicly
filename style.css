@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 body {
-  
   overflow-y: hidden;
 }
 
@@ -13,26 +12,23 @@ body {
   min-height: 100%;
 }
 
-
 *::-webkit-scrollbar {
-  width: 10px;               /* width of the entire scrollbar */
+  width: 10px; /* width of the entire scrollbar */
 }
 
 *::-webkit-scrollbar-track {
-  background: rgb(183, 179, 184);        /* color of the tracking area */
+  background: rgb(183, 179, 184); /* color of the tracking area */
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgb(6, 6, 7);    /* color of the scroll thumb */
-  border-radius: 50px;       /* roundness of the scroll thumb */
-  border: 3px solid rgb(183, 179, 184);  /* creates padding around scroll thumb */
+  background-color: rgb(6, 6, 7); /* color of the scroll thumb */
+  border-radius: 50px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(183, 179, 184); /* creates padding around scroll thumb */
 }
-
 
 * {
   margin: 0;
   padding: 0;
- 
 }
 
 .brand img {
@@ -47,22 +43,21 @@ body {
   font-size: 1.3rem;
 }
 
-
 .container1 {
-    height: 72.5vh;
+  height: 72.5vh;
 
-    background-color: black;
-    color: white;
-   font-family: 'Varela Round', sans-serif;
-   display: flex;
-   position: relative;
-   margin: 23px auto;
-   width: 80%;
-   border-radius: 25px;
-   padding: 34px;
-   background-image: url('bg.jpg');
-   overflow-y: scroll;
-   overflow-x: hidden;
+  background-color: black;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  position: relative;
+  margin: 23px auto;
+  width: 80%;
+  border-radius: 25px;
+  padding: 34px;
+  background-image: url("bg.jpg");
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .bottom {
@@ -83,8 +78,8 @@ body {
 .icons i {
   cursor: pointer;
 }
-.songlistplay i{
-    cursor: pointer;
+.songlistplay i {
+  cursor: pointer;
 }
 #myProgressBar {
   width: 80vw;
